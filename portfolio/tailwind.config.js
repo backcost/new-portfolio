@@ -18,7 +18,12 @@ module.exports = {
         light: "#f5f5f5",
         primary: "#B63E96", 
         primaryDark: "#58E6D9",
-      }
+        blue: "#0A66C2",
+        white: "#FFFFFF",
+      },
+      animation: {
+        'bounce-slow': 'bounce 3s linear infinite',
+      },
     },
   },
   plugins: [],
