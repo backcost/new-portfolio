@@ -2,13 +2,13 @@ import Layout from '@/components/Layout'
 import Head from 'next/head'
 import profilePic from '../../public/profilePic.png'
 import AnimatedText from '@/components/AnimatedText'
-import WhatsAppLink from '@/components/WhatsAppLink'
 
 export default function Home() {
   return (
     <>
       <Head>
         <title>Gabriel | FullStack Developer</title>
+        <meta name='description' content="Gabriel Costa is a web developer from Brazil. Here you'll find some information about his carrer and some of his projects." />
       </Head>
       <main className='flex items-center text-dark w-full min-h-screen'>
         <Layout className='pt-0'>
@@ -25,7 +25,6 @@ export default function Home() {
             </div>
           </div>
         </Layout>
-        <WhatsAppLink />
       </main>
     </>
   )
