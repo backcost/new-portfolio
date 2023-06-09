@@ -1,4 +1,5 @@
 import AnimatedText from '@/components/AnimatedText'
+import { Experience } from '@/components/Experience'
 import Layout from '@/components/Layout'
 import SkillList from '@/components/SkillList'
 import Head from 'next/head'
@@ -13,29 +14,27 @@ const about = () => {
         </Head>
 
         <main className='flex w-full flex-col items-center justify-center'>
-            <Layout className='pt-6'>
-                <AnimatedText text="Biography" className='text-3xl text-dark/75' />
-                <div className='grid w-full grid-cols-8 gap-16'>
-                    <div className='col-span-3 flex flex-col items-start justify-start'>
-                        <h2 className='mb-4 text-lg font-bold uppercase text-dark/75'>Biography</h2>
-                        <p className='font-medium'>
-                        Programming journey:
-                        2017: Started creating programs for the HP 50g calculator using the USER-RPL language to facilitate engineering problem-solving.
+            <Layout className='pt-1'>
+                <AnimatedText text="Biography" className='!text-4xl text-dark/75 py-10' />
+                <div className=''>
+                    <p className='font-medium'>
+                    Programming journey:
+                    2017: Started creating programs for the HP 50g calculator using the USER-RPL language to facilitate engineering problem-solving.
 
-                        2018: Developed a family budget spreadsheet in Excel using VBA. I still use this spreadsheet today to simplify personal expense tracking.
+                    2018: Developed a family budget spreadsheet in Excel using VBA. I still use this spreadsheet today to simplify personal expense tracking.
 
-                        2020: Began studying programming logic with Python.
+                    2020: Began studying programming logic with Python.
 
-                        2021: The year I decided to transition my career. I focused my studies on the fundamentals: JavaScript, HTML, CSS.
+                    2021: The year I decided to transition my career. I focused my studies on the fundamentals: JavaScript, HTML, CSS.
 
-                        2022: First job as a Web Developer.
-                        </p>
-                    </div>
+                    2022: First job as a Web Developer.
+                    </p>
                 </div>
-                <AnimatedText text="Skills" className='text-3xl text-dark/75' />
+                <AnimatedText text="Skills" className='!text-4xl text-dark/75 py-10' />
                 <SkillList />
-                <AnimatedText text="Experience" className='text-3xl text-dark/75' />
-                <AnimatedText text="Education" className='text-3xl text-dark/75' />
+                <AnimatedText text="Experience" className='!text-4xl text-dark/75 py-10' />
+                <Experience/>
+                <AnimatedText text="Education" className='!text-4xl text-dark/75 pt-10' />
             </Layout>
         </main>
     </>

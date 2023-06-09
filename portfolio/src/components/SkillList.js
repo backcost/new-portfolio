@@ -37,9 +37,10 @@ const SkillList = () => {
   });
 
   return (
-    <div className="grid grid-cols-3 gap-4">
+    <div className='flex justify-center items-center'>
+      <div className="grid grid-cols-3 gap-4">
       {skillColumns.map((column, columnIndex) => (
-        <ul key={columnIndex} className="list-disc">
+        <ul key={columnIndex} className="list-disc ml-20 mr-20">
           {column.map((skill, skillIndex) => (
             <li key={skillIndex} className="flex items-center space-x-2">
               {skills[skill]}{`\xa0\xa0`}{skill}
@@ -47,6 +48,7 @@ const SkillList = () => {
           ))}
         </ul>
       ))}
+      </div>
     </div>
   );
 };
