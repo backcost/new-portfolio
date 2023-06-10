@@ -5,7 +5,7 @@ import LiIcon from './LiIcon'
 const Job = ({ position, company, companyLink, time, address, work }) => {
   const ref = useRef(null)
   return (
-    <li ref={ref} className='my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center
+    <li ref={ref} className='my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col
     justify-between'>
       <LiIcon reference={ref} />
         <motion.div initial={{y:50}} whileInView={{y:0}} 
@@ -60,6 +60,7 @@ const Jobs = () => {
     <>
       { jobsList.map( (detail) => 
         <Job 
+          key = {detail[1]}
           position={detail[0]}
           company={detail[1]}
           companyLink={detail[2]}
