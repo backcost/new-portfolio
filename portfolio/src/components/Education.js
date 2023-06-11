@@ -29,12 +29,21 @@ const Jobs = () => {
     [ 'Bachelor in Civil Engineering', 
       '2013 - 2020', 
       'Federal University of Piauí', 
-      'The Civil Engineering course at UFPI (Federal University of Piauí) offers a comprehensive and rigorous curriculum for students interested in pursuing a career in civil engineering. The program combines theoretical knowledge with practical applications, providing students with a strong foundation in areas such as structural analysis, construction management, geotechnical engineering, transportation systems, and environmental engineering. ',
+      `The Civil Engineering course at UFPI (Federal University of Piauí) offers a 
+      comprehensive and rigorous curriculum for students interested in pursuing a career 
+      in civil engineering. The program combines theoretical knowledge with practical 
+      applications, providing students with a strong foundation in areas such as structural 
+      analysis, construction management, geotechnical engineering, transportation systems, and 
+      environmental engineering. `,
         'https://www.ufpi.br/'],
     [ 'web development courses', 
       '2021 - 2023', 
       'Alura', 
-      "Alura offers a wide range of web development courses designed to cater to both beginners and experienced professionals. Their curriculum covers front-end and back-end technologies, including HTML, CSS, JavaScript, React, Angular, Node.js, PHP, Python, and more. With a practical approach focused on real-world projects, Alura's courses provide hands-on experience to build interactive websites and web applications.",
+      `Alura offers a wide range of web development courses designed to cater to both beginners 
+      and experienced professionals. Their curriculum covers front-end and back-end 
+      technologies, including HTML, CSS, JavaScript, React, Angular, Node.js, PHP, Python, and 
+      more. With a practical approach focused on real-world projects, Alura's courses provide 
+      hands-on experience to build interactive websites and web applications.`,
       'https://www.alura.com.br/'],
     [ 'English Course', 
       '2008 - 2011', 

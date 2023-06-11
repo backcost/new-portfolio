@@ -89,29 +89,32 @@ const projects = () => {
                 <div className='grid grid-cols-12 gap-24 gap-y-32'>
                     <div className='col-span-12'>
                         <FeaturedProject 
-                        type="landing page" 
-                        title="ARC Finanças landing page" 
+                        type="Website" 
+                        title="ARC Finanças" 
                         summary="Landing page development using HTML, CSS and JavaScript (All Vanilla)." 
                         img={arcFinancasImage}
                         link="https://www.arcfinancas.com.br/" 
                         github="https://github.com/backcost/arc-financas"
                         />
                     </div>
+                    <div className='col-span-12'>
+                        <FeaturedProject 
+                        type="Website" 
+                        title="ARC Finanças" 
+                        summary="Landing page development using HTML, CSS and JavaScript (All Vanilla)." 
+                        img={arcFinancasImage}
+                        link="https://www.arcfinancas.com.br/" 
+                        github="https://github.com/backcost/arc-financas"
+                        />
+                    </div>
+                    {/*
                     <div className='col-span-6'>
                         Project-1
                     </div>
                     <div className='col-span-6'>
                         Project-2
                     </div>
-                    <div className='col-span-12'>
-                        Featured Project
-                    </div>
-                    <div className='col-span-6'>
-                        Project-3
-                    </div>
-                    <div className='col-span-6'>
-                        Project-4
-                    </div>
+                    */}
                 </div>
             </Layout>
         </main>
