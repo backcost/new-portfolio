@@ -14,7 +14,7 @@ const about = () => {
             <meta name='description' content="A resume about Gabriel Costa's career" />
         </Head>
 
-        <main className='flex w-full flex-col items-center justify-center'>
+        <main className='flex w-full flex-col items-center justify-center dark:text-light'>
             <Layout className='pt-1'>
                 <AnimatedText text="Biography" className='!text-4xl text-dark/75 py-10' />
                 <div className='w-[75%] mx-auto'>

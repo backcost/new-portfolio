@@ -14,7 +14,7 @@ const Job = ({ type, time, place, info, link }) => {
                 <h3 className='capitalize font-bold text-2xl'>
                     {type}
                 </h3>
-                <span className='capitalize font-medium text-dark/60'>
+                <span className='capitalize font-medium text-dark/60 dark:text-light/75'>
                     {time} | {place}
                 </span>
                 <p className='font-medium w-full mt-3'>{info}</p>
@@ -79,7 +79,7 @@ export const Education = () => {
     <>
       <div ref={ref} className='w-[75%] mx-auto relative mb-[18px]'>
         <motion.div style={{scaleY: scrollYProgress}} className='absolute left-9 top-0 w-[4px] 
-        h-full bg-dark origin-top'/>
+        h-full bg-dark origin-top dark:bg-light'/>
           <ul className='w-full flex flex-col items-start justify-start ml-4'>
             <Jobs />
           </ul>

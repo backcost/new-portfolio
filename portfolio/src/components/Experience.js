@@ -15,11 +15,11 @@ const Job = ({ position, company, companyLink, time, address, work }) => {
           </h3>
           <h4>
             <a href={companyLink} target='_blank' className='text-primary capitalize 
-            font-bold text-2xl'>
+            font-bold text-2xl dark:text-primaryDark'>
                 {company}
             </a>
           </h4>
-          <span className='capitalize font-medium text-dark/60'>
+          <span className='capitalize font-medium text-dark/60 dark:text-light/75'>
             {time} | {address}
           </span>
           <p className='font-medium w-full mt-3'>{work}</p>
@@ -90,7 +90,7 @@ export const Experience = () => {
     <>
       <div ref={ref} className='w-[75%] mx-auto relative'>
         <motion.div style={{scaleY: scrollYProgress}} className='absolute left-9 top-0 w-[4px] 
-        h-full bg-dark origin-top'/>
+        h-full bg-dark origin-top dark:bg-light'/>
           <ul className='w-full flex flex-col items-start justify-between ml-4'>
             <Jobs />
           </ul>
