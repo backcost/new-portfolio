@@ -5,6 +5,7 @@ import Layout from '@/components/Layout'
 import SkillList from '@/components/SkillList'
 import Head from 'next/head'
 import React from 'react'
+import TransitionEffect from '@/components/hooks/TransitionEffect'
 
 const about = () => {
   return (
@@ -13,6 +14,7 @@ const about = () => {
             <title>Gabriel | About</title>
             <meta name='description' content="A resume about Gabriel Costa's career" />
         </Head>
+        <TransitionEffect />
 
         <main className='flex w-full flex-col items-center justify-center dark:text-light'>
             <Layout className='!p-4 xl:!p-4'>

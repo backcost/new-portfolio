@@ -3,6 +3,7 @@ import Head from 'next/head'
 import profilePic from '../../public/profilePic.png'
 import AnimatedText from '@/components/AnimatedText'
 import Image from 'next/image'
+import TransitionEffect from '@/components/hooks/TransitionEffect'
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         <title>Gabriel | FullStack Developer</title>
         <meta name='description' content="Gabriel Costa is a web developer from Brazil. Here you'll find some information about his carrer and some of his projects." />
       </Head>
+      <TransitionEffect />
       <main className='flex items-center text-dark w-full min-h-screen dark:text-light'>
         <Layout className='pt-0 md:pt-16 sm:pt-8'>
           <div className='flex items-center justify-between w-full lg:flex-col'>
