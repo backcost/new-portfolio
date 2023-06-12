@@ -15,8 +15,9 @@ const about = () => {
         </Head>
 
         <main className='flex w-full flex-col items-center justify-center dark:text-light'>
-            <Layout className='pt-1'>
-                <AnimatedText text="Biography" className='!text-4xl text-dark/75 py-10' />
+            <Layout className='!p-4 xl:!p-4'>
+                <AnimatedText text="Biography" className='!text-4xl text-dark/75 py-6 
+                '/>
                 <div className='w-[75%] mx-auto'>
                     <p className='font-medium mb-8'>
                     My name is Gabriel Costa, a Brazilian civil engineering graduate from 

@@ -3,52 +3,36 @@ import { FaNodeJs, FaReact, FaMobileAlt, FaHtml5, FaCss3, FaFileCode, FaWind, Fa
 import { SiMysql, SiMicrosoftsqlserver, SiTypescript, SiJavascript } from 'react-icons/si';
 
 const SkillList = () => {
-  const skills = {
-    'Node.Js': <FaNodeJs />,
-    'React.js': <FaReact />,
-    'React Native': <FaMobileAlt />,
-    'MySQL': <SiMysql />,
-    'MSSQL': <SiMicrosoftsqlserver />,
-    'JavaScript': <SiJavascript />,
-    'HTML': <FaHtml5 />,
-    'CSS': <FaCss3 />,
-    'TypeScript': <SiTypescript />,
-    'Styled Components': <FaFileCode />,
-    'Tailwind CSS': <FaWind />,
-    'Bootstrap': <FaBootstrap />,
-    'SASS': <FaSass />,
-    'Python': <FaPython />,
-    'Git': <FaGitAlt />,
-    'Power BI': <FaChartBar />,
-    'Microsoft Excel': <FaFileExcel />,
-  };
-  
-  const columnCount = 3;
-
-  const skillColumns = [];
-  for (let i = 0; i < columnCount; i++) {
-    skillColumns.push([]);
-  }
-
-  let keys = Object.keys(skills)
-  keys.forEach((skill, index) => {
-    const columnIndex = index % columnCount;
-    skillColumns[columnIndex].push(skill);
-  });
+  const skills = [
+    ['Node.Js', <FaNodeJs />],
+    ['React.js', <FaReact />],
+    ['React Native', <FaMobileAlt />],
+    ['MySQL', <SiMysql />],
+    ['MSSQL', <SiMicrosoftsqlserver />],
+    ['JavaScript', <SiJavascript />],
+    ['HTML', <FaHtml5 />],
+    ['CSS', <FaCss3 />],
+    ['TypeScript', <SiTypescript />],
+    ['Styled Components', <FaFileCode />],
+    ['Tailwind CSS', <FaWind />],
+    ['Bootstrap', <FaBootstrap />],
+    ['SASS', <FaSass />],
+    ['Python', <FaPython />],
+    ['Git', <FaGitAlt />],
+    ['Power BI', <FaChartBar />],
+    ['Microsoft Excel', <FaFileExcel />],
+  ];
 
   return (
     <div className='flex justify-center items-center w-[95%] mx-auto'>
-      <div className="grid grid-cols-3 gap-48">
-      {skillColumns.map((column, columnIndex) => (
-        <ul key={columnIndex} className="list-disc">
-          {column.map((skill, skillIndex) => (
-            <li key={skillIndex} className="flex items-center space-x-2">
-              {skills[skill]}{`\xa0\xa0`}{skill}
+        <ul className="grid grid-cols-3 gap-y-4 gap-x-32 xl:gap-x-24 lg:grid-cols-2 
+        sm:grid-cols-1">
+          {skills.map((skill) => (
+            <li key={skill[0]} className="flex items-center space-x-2">
+              {skill[1]}{`\xa0\xa0`}{skill[0]}
             </li>
           ))}
         </ul>
-      ))}
-      </div>
     </div>
   );
 };
