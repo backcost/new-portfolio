@@ -2,6 +2,7 @@ import Layout from '@/components/Layout'
 import Head from 'next/head'
 import profilePic from '../../public/profilePic.png'
 import AnimatedText from '@/components/AnimatedText'
+import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -21,7 +22,10 @@ export default function Home() {
                 intuitive, and efficient, you've come to the right place.</p>
             </div>
             <div className='w-1/2'> 
-              <img src={profilePic.src} alt='Gabriel Costa' className='w-[400px]' />
+              <Image src={profilePic} alt='Gabriel Costa' className='w-full h-auto' priority
+              sizes='(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              50vw'/>
             </div>
           </div>
         </Layout>
