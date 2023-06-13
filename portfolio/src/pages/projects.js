@@ -4,7 +4,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import arcFinancasImage from '../../public/arcFinancas.PNG'
+import arcFinancasImage from '../../public/arcfinancas.png'
 import { motion } from 'framer-motion'
 import TransitionEffect from '@/components/hooks/TransitionEffect'
 
