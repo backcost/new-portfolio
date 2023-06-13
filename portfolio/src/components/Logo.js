@@ -8,7 +8,7 @@ const Logo = () => {
         <Link href="/" className='w-16 h-16 rounded-full border border-solid 
         border-transparent dark:border-light'>
           <Image
-            src="/../public/logo.png"
+            src="../../public/logo.png"
             width={200}
             height={200}
             className='rounded-full'
