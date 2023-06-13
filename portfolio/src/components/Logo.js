@@ -12,6 +12,7 @@ const Logo = () => {
             width={200}
             height={200}
             className='rounded-full'
+            alt='Gabriel Costa'
           />
         </Link>
     </div>
