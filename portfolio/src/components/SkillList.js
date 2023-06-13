@@ -4,31 +4,32 @@ import { SiMysql, SiMicrosoftsqlserver, SiTypescript, SiJavascript } from 'react
 
 const SkillList = () => {
   const skills = [
-    ['Node.Js', <FaNodeJs />],
-    ['React.js', <FaReact />],
-    ['React Native', <FaMobileAlt />],
-    ['MySQL', <SiMysql />],
-    ['MSSQL', <SiMicrosoftsqlserver />],
-    ['JavaScript', <SiJavascript />],
-    ['HTML', <FaHtml5 />],
-    ['CSS', <FaCss3 />],
-    ['TypeScript', <SiTypescript />],
-    ['Styled Components', <FaFileCode />],
-    ['Tailwind CSS', <FaWind />],
-    ['Bootstrap', <FaBootstrap />],
-    ['SASS', <FaSass />],
-    ['Python', <FaPython />],
-    ['Git', <FaGitAlt />],
-    ['Power BI', <FaChartBar />],
-    ['Microsoft Excel', <FaFileExcel />],
+    ['Node.Js', <FaNodeJs />, 1],
+    ['React.js', <FaReact />, 2],
+    ['React Native', <FaMobileAlt />, 3],
+    ['MySQL', <SiMysql />, 4],
+    ['MSSQL', <SiMicrosoftsqlserver />, 5],
+    ['JavaScript', <SiJavascript />, 6],
+    ['HTML', <FaHtml5 />, 7],
+    ['CSS', <FaCss3 />, 8],
+    ['TypeScript', <SiTypescript />, 9],
+    ['Styled Components', <FaFileCode />, 10],
+    ['Tailwind CSS', <FaWind />, 11],
+    ['Bootstrap', <FaBootstrap />, 12],
+    ['SASS', <FaSass />, 13],
+    ['Python', <FaPython />, 14],
+    ['Git', <FaGitAlt />, 15],
+    ['Power BI', <FaChartBar />, 16],
+    ['Microsoft Excel', <FaFileExcel />, 17],
   ];
+
 
   return (
     <div className='flex justify-center items-center w-[95%] mx-auto'>
         <ul className="grid grid-cols-3 gap-y-4 gap-x-32 xl:gap-x-24 lg:grid-cols-2 
         sm:grid-cols-1">
-          {skills.map((skill) => (
-            <li key={skill[0]} className="flex items-center space-x-2">
+          {skills.map((skill, index) => (
+            <li key={skill[2]} className="flex items-center space-x-2">
               {skill[1]}{`\xa0\xa0`}{skill[0]}
             </li>
           ))}
