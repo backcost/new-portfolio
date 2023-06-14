@@ -20,7 +20,7 @@ const about = () => {
             <Layout className='!p-4 xl:!p-4'>
                 <AnimatedText text="Biography" className='!text-4xl text-dark/75 py-6 
                 '/>
-                <div className='w-[75%] mx-auto'>
+                <div className='w-[75%] mx-auto sm:text-sm xs:w-[90%] sm:text-justify'>
                     <p className='font-medium mb-8'>
                     My name is Gabriel Costa, a Brazilian civil engineering graduate from 
                     UFPI (Federal University of Piauí).
