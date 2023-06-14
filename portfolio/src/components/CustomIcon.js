@@ -6,7 +6,7 @@ const CustomIcon = ({href, content, className=""}) => {
         <motion.a 
         target={"_blank"}
         href={href} 
-        className={`${className} w-6`}
+        className={`${className} w-7`}
         whileHover={{y:-2}}
         whileTap={{scale:0.9}}
         >

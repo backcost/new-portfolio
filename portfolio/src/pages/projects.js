@@ -5,6 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import arcFinancasImage from '../../public/arcfinancas.png'
+import portfolioImage from '../../public/portfolio.png'
 import { motion } from 'framer-motion'
 import TransitionEffect from '@/components/hooks/TransitionEffect'
 
@@ -20,7 +21,7 @@ const FeaturedProject = ({type, title, summary, img, link, github}) => {
             bg-dark rounded-br-3xl dark:bg-light xs:-right-2 sm:h-[102%] xs:w-full
             xs:rounded-[1.5rem]' />
             <Link href={link} target='_blank' className='w-1/2 cursor-pointer
-            overflow-hidden rounded-lg lg:w-full'>
+            overflow-hidden rounded-lg lg:w-full border-solid border-black border'>
                 <FramerImage src={img} alt={title} className='w-full h-auto' 
                 whileHover={{scale:1.05}}
                 transition={{duration:0.2}}
@@ -118,11 +119,11 @@ const projects = () => {
                     <div className='col-span-12'>
                         <FeaturedProject 
                         type="Website" 
-                        title="ARC Finanças" 
-                        summary="Landing page development using HTML, CSS and JavaScript (All Vanilla)." 
-                        img={arcFinancasImage}
-                        link="https://www.arcfinancas.com.br/" 
-                        github="https://github.com/backcost/arc-financas"
+                        title="My Portfolio" 
+                        summary="Responsive portfolio using Next.js, Tailwind CSS and Framer Motion" 
+                        img={portfolioImage}
+                        link="./" 
+                        github="https://github.com/backcost/new-portfolio"
                         />
                     </div>
                     {/*
