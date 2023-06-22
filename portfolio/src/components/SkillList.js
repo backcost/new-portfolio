@@ -1,9 +1,11 @@
 import React from 'react';
 import { FaNodeJs, FaReact, FaMobileAlt, FaHtml5, FaCss3, FaFileCode, FaWind, FaBootstrap, FaSass, FaPython, FaGitAlt, FaChartBar, FaFileExcel } from 'react-icons/fa';
 import { SiMysql, SiMicrosoftsqlserver, SiTypescript, SiJavascript } from 'react-icons/si';
+import { TbBrandNextjs } from 'react-icons/tb';
 
 const SkillList = () => {
   const skills = [
+    ['Next.Js', <TbBrandNextjs />, 1],
     ['Node.Js', <FaNodeJs />, 1],
     ['React.js', <FaReact />, 2],
     ['React Native', <FaMobileAlt />, 3],
