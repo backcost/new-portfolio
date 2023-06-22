@@ -5,8 +5,8 @@ import { TbBrandNextjs } from 'react-icons/tb';
 
 const SkillList = () => {
   const skills = [
-    ['Next.Js', <TbBrandNextjs />, 1],
-    ['Node.Js', <FaNodeJs />, 1],
+    ['Next.js', <TbBrandNextjs />, 1],
+    ['Node.js', <FaNodeJs />, 1],
     ['React.js', <FaReact />, 2],
     ['React Native', <FaMobileAlt />, 3],
     ['MySQL', <SiMysql />, 4],
