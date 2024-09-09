@@ -5,6 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import arcFinancasImage from '../../public/arcfinancas.png'
+import arcFinancasImageNovo from '../../public/arcfinancasNovo.png'
 import portfolioImage from '../../public/portfolio.png'
 import { motion } from 'framer-motion'
 import TransitionEffect from '@/components/hooks/TransitionEffect'
@@ -106,6 +107,15 @@ const projects = () => {
             <Layout className='pt-16'>
                 <div className='grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 
                 md:gap-y-24 sm:gap-x-0'>
+                    <div className='col-span-12'>
+                        <FeaturedProject 
+                        type="Website" 
+                        title="ARC Finanças" 
+                        summary="Landing page development using Wordpress with Elementor" 
+                        img={arcFinancasImageNovo}
+                        link="https://www.arcfinancas.com.br/" 
+                        />
+                    </div>
                     <div className='col-span-12'>
                         <FeaturedProject 
                         type="Website" 

@@ -26,6 +26,12 @@ const Job = ({ type, time, place, info, link }) => {
 
 const Jobs = () => {
   let jobsList = [
+    [
+      [ 'Software Analysis and Development', 
+        '2023 - 2025', 
+        'UniFacid Wyden', 
+        ``,
+          'https://www.wyden.com.br/graduacao/analise-e-desenvolvimento-de-sistemas'],
     [ 'Bachelor in Civil Engineering', 
       '2013 - 2020', 
       'Federal University of Piauí', 

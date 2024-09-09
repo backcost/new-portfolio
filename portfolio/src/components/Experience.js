@@ -31,6 +31,12 @@ const Job = ({ position, company, companyLink, time, address, work }) => {
 
 const Jobs = () => {
   let jobsList = [
+    [ 'Front End Developer - Freelancer', 
+      'Arc Finanças',
+      'https://www.arcfinancas.com.br/', 
+      '07/2024 - 08/2024', 
+      'Brazil', 
+      `Rebranding - Landing page development using Wordpress with Elementor`],
     [ 'Full Stack Developer', 
       'Lw Soluções em Tecnologia',
       'https://www.linkedin.com/company/lwsolucoes/', 
