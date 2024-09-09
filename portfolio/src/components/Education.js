@@ -58,8 +58,7 @@ const Jobs = () => {
       '2008 - 2011', 
       'Wizard by Pearson', 
       'English classes every Saturday for 4 years.',
-      'https://www.wizard.com.br/']
-
+      'https://www.wizard.com.br/'],
     ]
 
   return (
