@@ -114,6 +114,7 @@ const projects = () => {
                         summary="Landing page development using Wordpress with Elementor" 
                         img={arcFinancasImageNovo}
                         link="https://www.arcfinancas.com.br/" 
+                        github="https://github.com/backcost"
                         />
                     </div>
                     <div className='col-span-12'>
@@ -122,7 +123,7 @@ const projects = () => {
                         title="ARC Finanças" 
                         summary="Landing page development using HTML, CSS and JavaScript (All Vanilla)." 
                         img={arcFinancasImage}
-                        link="https://www.arcfinancas.com.br/" 
+                        link="https://backcost.github.io/arc-financas/" 
                         github="https://github.com/backcost/arc-financas"
                         />
                     </div>

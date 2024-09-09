@@ -46,7 +46,7 @@ const Jobs = () => {
       Component development in React Native for other projects.`],
     [ 'Front End Developer - Freelancer', 
       'Arc Finanças',
-      'https://www.arcfinancas.com.br/', 
+      'https://backcost.github.io/arc-financas/', 
       '03/2022 - 07/2022', 
       'Brazil', 
       `Landing page development using HTML, CSS and JavaScript (All Vanilla).`],
