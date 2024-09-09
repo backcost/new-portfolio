@@ -26,8 +26,7 @@ const Job = ({ type, time, place, info, link }) => {
 
 const Jobs = () => {
   let jobsList = [
-    [
-      [ 'Software Analysis and Development', 
+    [ 'Software Analysis and Development', 
         '2023 - 2025', 
         'UniFacid Wyden', 
         ``,
