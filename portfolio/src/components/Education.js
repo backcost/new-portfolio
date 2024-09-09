@@ -26,11 +26,13 @@ const Job = ({ type, time, place, info, link }) => {
 
 const Jobs = () => {
   let jobsList = [
+
     [ 'Software Analysis and Development', 
         '2023 - 2025', 
         'UniFacid Wyden', 
-        ``,
+        '',
           'https://www.wyden.com.br/graduacao/analise-e-desenvolvimento-de-sistemas'],
+
     [ 'Bachelor in Civil Engineering', 
       '2013 - 2020', 
       'Federal University of Piauí', 
@@ -41,6 +43,7 @@ const Jobs = () => {
       analysis, construction management, geotechnical engineering, transportation systems, and 
       environmental engineering. `,
         'https://www.ufpi.br/'],
+
     [ 'web development courses', 
       '2021 - 2023', 
       'Alura', 
@@ -50,11 +53,13 @@ const Jobs = () => {
       more. With a practical approach focused on real-world projects, Alura's courses provide 
       hands-on experience to build interactive websites and web applications.`,
       'https://www.alura.com.br/'],
+
     [ 'English Course', 
       '2008 - 2011', 
       'Wizard by Pearson', 
       'English classes every Saturday for 4 years.',
-      'https://www.wizard.com.br/'],
+      'https://www.wizard.com.br/']
+
     ]
 
   return (
